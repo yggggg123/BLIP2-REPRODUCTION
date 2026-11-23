@@ -1,0 +1,64 @@
+{
+  "version": "image_disjoint_vqa_v1",
+  "created_at": "2026-11-22T22:54:25.480611+08:00",
+  "protocol": "Custom supervised VQA splits from locally available VQAv2 validation images; not official benchmark splits",
+  "parameters": {
+    "train_count": 10000,
+    "test_count": 1000,
+    "seed": 42,
+    "train_rule": "one_question_per_caption_training_image",
+    "dev_rule": "fixed_previous_1000_questions",
+    "test_rule": "exclude_all_caption_training_and_dev_images"
+  },
+  "source_fingerprints": {
+    "full_vqa_input": {
+      "location": "data/coco/annotations/vqa_val_eval.json",
+      "bytes": 51826787,
+      "sha256": "3ae659ac94baf0db946de4b6a36cafd1ec532fee503ce73dd5d29aedbaaf4204"
+    },
+    "caption_training": {
+      "location": "data/coco/annotations/coco_stage1_existing_images.json",
+      "bytes": 22325101,
+      "sha256": "4aefcc81b60c316ac0721251724c651ab4df90cfb346e4167d7542716be97d09"
+    },
+    "development": {
+      "location": "data/coco/annotations/holdout_n1000_seed42/vqa_val_eval.json",
+      "bytes": 238997,
+      "sha256": "f003908332c73ea2b29ec304caa5b2268b48f3e48ae1db2449d719a6e15ed6e5"
+    },
+    "raw_vqa_answers": {
+      "location": "data/coco/annotations/v2_mscoco_val2014_annotations.json",
+      "bytes": 171762489,
+      "sha256": "0564650e712b34c246e4ad142894692bf2e45dee8e9cc6ebb2cedbe85731c4bf"
+    }
+  },
+  "outputs": {
+    "train": {
+      "file": "train.json",
+      "bytes": 2773715,
+      "sha256": "d7f2f0142ba9da9cf6648bbf82915d5aac3f81c0e6e559d1815ee83b90df6f93",
+      "questions": 10000,
+      "images": 10000,
+      "question_ids_sha256": "d64c9c90b44831e04568df944dcd012ce4528c3d25620e5640ee2d3d3e5df340"
+    },
+    "dev": {
+      "file": "dev.json",
+      "bytes": 274035,
+      "sha256": "1ecc4cdc94a0a2868904cb71b5c60f1d93143f0437775ee0a453e18fadfc9f1c",
+      "questions": 1000,
+      "images": 931,
+      "question_ids_sha256": "9cd9016d920fa49ab170d597b3f63ad5deb2d2a414eb77dd253c60d86293e980"
+    },
+    "test": {
+      "file": "test.json",
+      "bytes": 276199,
+      "sha256": "59e6afe8bb5c5b860aadaaa11fd435a41bb1f837245acd2cc790b95c3af1b09f",
+      "questions": 1000,
+      "images": 923,
+      "question_ids_sha256": "fd6c91159580558105bcf1e2cd978beb8719ab6f56d5c752220a1419a4c04c26"
+    }
+  },
+  "images_checked": true,
+  "answers": "Ten original human-answer votes per question; preserve frequency when sampling training targets",
+  "pretraining_scope": "Disjointness refers to this local caption pretraining, not all data used by public EVA/T5 checkpoints"
+}

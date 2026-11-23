@@ -1,0 +1,70 @@
+{
+  "scores": {
+    "dev": {
+      "plain": {
+        "agg_metrics": 41.57,
+        "number": 25.22,
+        "other": 23.94,
+        "yes/no": 68.82
+      },
+      "constant": {
+        "agg_metrics": 42.32,
+        "number": 27.72,
+        "other": 24.11,
+        "yes/no": 69.67
+      },
+      "question": {
+        "agg_metrics": 41.29,
+        "number": 27.28,
+        "other": 24.15,
+        "yes/no": 67.12
+      }
+    },
+    "test": {
+      "plain": {
+        "agg_metrics": 39.84,
+        "other": 25.19,
+        "yes/no": 68.23,
+        "number": 18.58
+      },
+      "constant": {
+        "agg_metrics": 40.09,
+        "other": 25.45,
+        "yes/no": 68.59,
+        "number": 18.51
+      },
+      "question": {
+        "agg_metrics": 39.51,
+        "other": 24.91,
+        "yes/no": 67.67,
+        "number": 18.66
+      }
+    }
+  },
+  "comparisons": {
+    "constant-plain": {
+      "difference_pp": 0.25,
+      "ci95_low_pp": -0.3466300458874716,
+      "ci95_high_pp": 0.8594553190822463,
+      "questions": 1000,
+      "images": 923,
+      "resamples": 2000
+    },
+    "question-plain": {
+      "difference_pp": -0.33,
+      "ci95_low_pp": -1.0510644573144574,
+      "ci95_high_pp": 0.35114382556536555,
+      "questions": 1000,
+      "images": 923,
+      "resamples": 2000
+    },
+    "question-constant": {
+      "difference_pp": -0.58,
+      "ci95_low_pp": -1.424415749731817,
+      "ci95_high_pp": 0.27910481091506867,
+      "questions": 1000,
+      "images": 923,
+      "resamples": 2000
+    }
+  }
+}

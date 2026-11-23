@@ -1,0 +1,23 @@
+[
+  {
+    "variant": "plain",
+    "filename": "checkpoint_last.pth",
+    "size": 427051008,
+    "sha256": "6ac9169fc263c67ccc95a1620ad15732c366ede752fac349ea3698e4c6f17b77",
+    "published": false
+  },
+  {
+    "variant": "constant",
+    "filename": "checkpoint_last.pth",
+    "size": 427776488,
+    "sha256": "bb0cf62443eefeb89d4748cf7e4f28a873a794e17137bfe8efd50a1532862e58",
+    "published": false
+  },
+  {
+    "variant": "question",
+    "filename": "checkpoint_last.pth",
+    "size": 427776552,
+    "sha256": "ca67f8a658b24595eae02fa807f16a1c6ac976aeb4d9432a487c5f849289cd41",
+    "published": false
+  }
+]

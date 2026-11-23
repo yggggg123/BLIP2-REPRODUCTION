@@ -1,0 +1,26 @@
+{
+  "scope": "original 1000-question set; now development set for gating study",
+  "question_count": 1000,
+  "scores": {
+    "stage2": {
+      "agg_metrics": 41.9,
+      "yes/no": 70.05,
+      "number": 14.85,
+      "other": 26.59
+    },
+    "official": {
+      "agg_metrics": 65.48,
+      "yes/no": 85.27,
+      "number": 45.88,
+      "other": 54.88
+    }
+  },
+  "training_data": {
+    "images": 30504,
+    "caption_pairs": 152634
+  },
+  "stage1_steps": 5000,
+  "stage1_batch_size": 32,
+  "stage2_steps": 5000,
+  "stage2_batch_size": 16
+}
